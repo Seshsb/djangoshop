@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for i in products %}
+<img src="D:\tehnikum\lesson16\djangoshop\eshop\{{i.product_photo}}">
+    <h4>Product: <a href="/{{i.id}}">{{i.product_name}}</a></h4>
+    <h4>Price: {{i.product_price}}</h4>
+    <h4>Category: {{i.product_category}}</h4><br>
+{% endfor %}
+</body>
+</html>
